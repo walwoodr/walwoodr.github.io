@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Syntactic honey and catching flies"
-date:   2017-04-19 15:30:46 +0000
+date:   2017-04-19 11:30:47 -0400
 ---
 
 Syntactic sugar is a wonderful thing. It allows us to do many programming tasks so straightforwardly that at a certain point we forget that what we're writing is not "pure" syntax, but rather, syntax wrapped in a layer of abstraction. 
@@ -28,7 +28,8 @@ end
 
 *WOAH*. This is some cool stuff. 
 
-## The dark side of syntactic sugar
+**The dark side of syntactic sugar**
+
    *Everyone knows you catch more flies with honey than with vinegar. *
    *But who wants to catch flies? *
 	 
@@ -62,7 +63,7 @@ To `validates :hats, presence: true, length: 6..100, format: { with: /\A[a-z|\s]
 
 The method, as we know, runs during interactions with the database (or `.valid?`), and checks that the `:hats` attribute matches all of the criteria included in the second argument, the hash.
 
-## Returning to the light
+**Returning to the light**
 
 The key to turning syntactic honey into syntactic sugar is: 
 
