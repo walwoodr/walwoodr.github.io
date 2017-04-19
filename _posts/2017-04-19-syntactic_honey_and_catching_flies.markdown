@@ -30,8 +30,8 @@ end
 
 **The dark side of syntactic sugar**
 
-   *Everyone knows you catch more flies with honey than with vinegar. *
-   *But who wants to catch flies? *
+   *Everyone knows you catch more flies with honey than with vinegar. 
+   But who wants to catch flies? *
 	 
 Sometimes, though, syntactic sugar becomes sticky. Especially for a beginner programmer, it can be unclear when syntactic sugar is being used. Often, these are the times when you'll get stuck. 
 
