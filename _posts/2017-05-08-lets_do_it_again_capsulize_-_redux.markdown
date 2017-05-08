@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Let's do it again (Capsulize - redux)"
-date:   2017-05-08 21:38:24 +0000
+date:   2017-05-08 17:38:25 -0400
 ---
 
 
