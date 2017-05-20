@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  JavaScript 💅: Make it work
-date:   2017-05-20 15:26:36 +0000
+date:   2017-05-20 11:26:36 -0400
 ---
 
 "Make it work" is one of my favorite phrases. It can mean anything from *It's broken, make it work* to *It's good, but you could make it **work***. When JavaScript comes onto the scene, we say make it work, and we mean the second. JavaScript can absolutely take a technology need from 0 to done, but my experience (and the experience of most modern webmedia consumers) is that JavaScript makes good better. 
