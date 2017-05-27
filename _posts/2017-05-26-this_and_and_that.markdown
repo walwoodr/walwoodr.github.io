@@ -1,12 +1,12 @@
 ---
 layout: post
 title:  this and => and that 
-date:   2017-05-26 16:53:27 +0000
+date:   2017-05-26 12:53:27 -0400
 ---
 
-### Or: how you can fall in love with the best of bad options
+**Or: how you can fall in love with the best of bad options**
 
-**Realtalk:** I prefer the standard function syntax to arrow function syntax. It's more verbose, certainly, but it's also more human readable. 
+*Realtalk:* I prefer the standard function syntax to arrow function syntax. It's more verbose, certainly, but it's also more human readable. 
 
 ```
 var hat = function(lollypop){
@@ -26,7 +26,7 @@ That said, as in poetry, the syntax mirrors the action here, and the way that th
 
 This allows us to bypass declaring a new variable in our JS objects to represent "this". 
 
-### This won't work
+**This won't work**
 
 Obviously this isn't a great idea, because it won't work. 
 
@@ -42,9 +42,9 @@ var moose = new Hat();
 // undefined
 ```
 
-### Declaring variable to represent this
+**Declaring variable to represent this**
 
-**More realtalk** Let's be honest with ourselves. `that` is useful, but it's also the linguistic equivalent to "literally" meaning both "figuratively" and "literally". It requires a lot of tracking to make sure that we're doing what we intended to do. To other people, it may as well have not been said. Avoiding this convention is a good idea where possible. 
+*More realtalk* Let's be honest with ourselves. `that` is useful, but it's also the linguistic equivalent to "literally" meaning both "figuratively" and "literally". It requires a lot of tracking to make sure that we're doing what we intended to do. To other people, it may as well have not been said. Avoiding this convention is a good idea where possible. 
 
 ```
 function Hat(){
@@ -59,7 +59,7 @@ var moose = new Hat();
 // 4
 ```
 
-### Using an arrow function
+**Using an arrow function**
 
 Sometimes even if you dislike a tool, it can be useful. 
 
