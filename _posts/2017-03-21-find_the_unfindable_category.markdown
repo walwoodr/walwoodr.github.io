@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Find the unfindable category"
-date:   2017-03-21 19:05:26 +0000
+title:  Find the unfindable category
+date:   2017-03-21 15:05:27 -0400
 ---
 
 ### The Problem
-On reading the requirements for the Command Line Interface project, a project immediately popped to mind. A blog I enjoyed reading while I was planning my wedding also frequently posts insightful, thoughtful essays about non-wedding-related topics, but after the wedding, I just couldn't handle seeing 8 posts a day in my RSS feed about weddings and to have to dig through them for the one or two posts a week that weren't full of dress choices and family drama.* They categorize the posts! Surely,* I thought, *there's a way to just look at the non-wedding posts.* But, in fact, the interface offered master list of post categories, so while I could look at a list of posts if I knew the category I wanted, I would have had to dig through several posts to find a category. That wasn't going to happen. 
+On reading the requirements for the Command Line Interface project, a project immediately popped to mind. A blog I enjoyed reading while I was planning my wedding also frequently posts insightful, thoughtful essays about non-wedding-related topics, but after the wedding, I just couldn't handle seeing 8 posts a day in my RSS feed about weddings and to have to dig through them for the one or two posts a week that weren't full of dress choices and family drama. *They categorize the posts!* I thought, *Surely there's a way to just look at the non-wedding posts.* But, in fact, the interface offered master list of post categories, so while I could look at a list of posts if I knew the category I wanted, I would have had to dig through several posts to find a category. That wasn't going to happen. 
 
 Enter programming. 
 
@@ -34,8 +34,8 @@ The article object was untouched throughout generating a list of categories, had
 ### The CLI Interface 
 From this point, I built a CLI that scrapes the article list for categories and displays the category list for selection by number. The CLI then displays 10 articles per category, with the ability to scroll up through the articles. This is another of the areas I majorly refactored, so here's another peek inside the works: 
 * **Initial build** -- Initially on building the article list viewer, the scraper iterated through all possible pages of articles before displaying a single article. This led to substantial lag in loading the initial 10 articles, as well as every subsequent 10 articles.
-* **Refactor** -- I refactored this code with performance in mind. After determining that each page of articles is 66 articles lonog, I set up a conditional chain in the Scraper class method to only scrape the page(s) that would be needed for the CLI article list that was currently being presented. I also built a conditional into the display method that only calls the scraper when the page will need information about articles that hadn't yet been scraped or instantiated. It's much faster! 
+* **Refactor** -- I refactored this code with performance in mind. After determining that each page of articles is 66 articles long, I set up a conditional chain in the Scraper class method to only scrape the page(s) that would be needed for the CLI article list that was currently being presented. I also built a conditional into the display method that only calls the scraper when the page will need information about articles that hadn't yet been scraped or instantiated. It's much faster! 
 
 After the CLI has displayed the list of articles, the user can choose an article to see more information about. Once the article is chosen, the Scraper article scraping class method scrapes the article, and the CLI displays the information about the article. 
 
-After everything was put togehter and working, my User Experience Design background also inspired me to build validation into the CLI gets using until loops to verify that the input is valid and prompt with more information if the input isn't valid. I also added some colors to the CLI interface via the Colorize Gem. 
+After everything was put together and working, my User Experience Design background also inspired me to build validation into the CLI gets using until loops to verify that the input is valid and prompt with more information if the input isn't valid. I also added some colors to the CLI interface via the Colorize Gem. 
